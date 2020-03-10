@@ -1,0 +1,254 @@
+.container-c {
+    width: 43%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.article-body {
+    padding-top: -20px;
+    text-align: justify;
+}
+
+.mid-bar {
+    border-left: 1px solid black;
+    height: 74%;
+    float: left;
+    margin-top: 15px;
+    padding-right: 30px;
+}
+
+.post-date {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.post-title {
+    font-size: 2rem;
+    padding-left: 0;
+}
+
+.post-image {
+    height: 300px;
+    // max-height: 50%;
+    float: left;
+    margin-right: 25px; 
+    padding-top: 13px;
+}
+
+.post-first-letter {
+    float: left;
+    width: 0.7em;
+    font-size: 300%;
+    line-height: 80%;
+    margin-top: 12px;
+    margin-right: 15px;
+}
+
+.category-article {
+    max-width: fit-content; font-size: 20px; font-weight: 300;
+}
+.discuss{
+    width: 80%;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+
+
+.mobile-nav {
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon {
+    font-size: 1.8rem;
+}
+
+.backdrop {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+    background-color: white;
+}
+
+
+#menuClose {
+    position: absolute;
+    right: 20px;
+    top: 7px;
+}
+
+.hidden-list {
+    list-style: none;
+    position: absolute;
+    top: 40%;
+     
+    text-align: center;
+}
+
+.hidden-list a:hover {
+    border-bottom: 1px solid $secondaryColor;
+    transition: border-bottom 0.2s;
+}
+
+.hidden-list li a:link{
+    border-bottom: 1px solid $primaryColor;
+    font-size: 1.3rem;
+}
+
+.hidden-list li {
+    padding: 5px;
+}
+
+@media only screen and (max-width: $sm) {
+    .container-c {
+        width: 90%;
+        margin: auto;
+    }
+
+    .post-image {
+        // height: 300px;
+        max-width: 100%;
+        height: auto;
+        // float: left;
+        margin-right: 25px; 
+        padding-top: 13px;
+        margin-bottom: 10px;
+    }
+
+    .post-first-letter {
+        // float: none;
+        display: inline-block;
+        width: 1rem;
+        font-size: 280%;
+        line-height: 80%;
+        margin-left: -4px;
+        margin-top: 7px;
+        margin-right: 1.5rem;
+    }
+
+    .post-date {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .mid-bar {
+        border-left: none;
+        border-top: 1px solid black;
+        margin-top: 15px;
+        margin-left: 16px;
+    }
+
+    .category-article {
+        font-size: 18px;
+    }
+
+    .post-title {
+        font-size: 1.7rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-name {
+        margin-left: 16px;
+        margin-top: 10px;
+    }
+
+    .article-body {
+        font-size: 1rem;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-top: -20px;
+        text-align: justify;
+    }
+    
+    .discuss {
+        min-width: 100%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .check-nav {
+        display: inline-block;
+    }
+}
+
+
+
+@media (min-width: $sm) and (max-width: $md) {
+    .container-c {
+        width: 70%;
+        margin: auto;
+    }
+
+    .post-image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .article-name {
+        font-size: 1.5rem;
+        padding-left: 15px;
+    }
+
+    .article-body { font-size: 1.1rem; }
+
+    .mid-bar {
+        border-top: 1px solid $primaryColor;
+        border-left: none;
+        width: 100%;
+        height: 15px;
+    }
+
+}
+
+@media (width: $md) {
+    .links { text-align: right; }
+
+    .mid-bar {
+        border-top: 0;
+        border-left: 1px solid $primaryColor;
+        height: 74%;
+        float: left;
+        width: fit-content;
+        margin-top: 12px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: $md) and (max-width: $lg) {
+    .container-c { width: 70%; }
+
+    .article-name {
+        padding-left: 30px;
+    }
+
+    .post-date { padding-top: 20px; }
+
+    .post-image { max-width: 50%; height: auto; }
+    .mid-bar {
+        
+        height: 82%;
+        
+    }
+}
+
+@media (min-width: $lg) and (max-width: $xl) {
+    .container-c { width: 70%; }
+}
+
+@media (min-width: $xl) {
+    .container-c {
+        width: 70%;
+    }
+}
+
+

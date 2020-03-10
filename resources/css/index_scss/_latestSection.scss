@@ -1,0 +1,57 @@
+h1{
+    font-size: 1.8rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.latest {
+    width: 1300px;
+    max-width: 90%;
+    margin: 80px auto;
+    box-shadow: 3px 6px 12px rgba(0,0,0,0.09);   
+}
+
+.background {
+    height: 423px;
+    background-image: url("https://images.hdqwalls.com/download/breaking-bad-fan-art-1280x960.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.primaryColor {
+    color: $primaryColor;
+}
+
+.latest-article {
+    background-color: $secondaryColor;
+    height: 29px;
+    width: 135px;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.font-weight-medium{
+    font-weight: 500;
+}
+
+.read-more-hover {
+    transition: color 0.2s ease-in-out;
+}
+
+.read-more-hover:hover {
+    color: $secondaryColor;
+    transition: color 0.2s ease-in-out;
+}
+
+.description {
+    line-height: 1.7em;
+}
+
+.content-box {
+    margin-right: 45px;
+    margin-left: 15px;
+    margin-top: 7px;
+}

@@ -1,0 +1,145 @@
+@import "./index_scss/main-nav";
+.container-categories {
+    width: 800px;
+    margin: auto;
+}
+
+.point {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border-color: $primaryColor;
+    border: 1px solid $primaryColor;
+    opacity: 1;
+    margin-top: 5px;
+}
+
+.technology-class,
+.tv-class,
+.human-class {
+    box-shadow: 3px 6px 12px rgba(0,0,0,0.09);
+    padding: 40px 30px;
+    min-width: fit-content;
+    margin: auto;
+    margin-top: 3REM;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.categories-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: 4rem;
+}
+
+.bullet-point {
+    max-width: fit-content;
+    margin-left: 10px;
+}
+
+.article-title {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+.check-nav {
+    float: right;
+    cursor: pointer;
+    display: none;
+   
+}
+
+.mobile-nav-icon {
+    font-size: 1.8rem;
+}
+
+.backdrop {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+
+    background-color: white;
+}
+
+#menuClose {
+    position: absolute;
+    right: 20px;
+    top: 7px;
+}
+
+.hidden-list {
+    list-style: none;
+    position: absolute;
+    top: 40%;
+ 
+}
+
+.hidden-list a:hover {
+    border-bottom: 1px solid $secondaryColor;
+    transition: border-bottom 0.2s;
+}
+
+.hidden-list li a:link{
+    border-bottom: 1px solid $primaryColor;
+    font-size: 1.3rem;
+}
+
+.hidden-list li {
+    padding: 5px;
+}
+
+.read-more-hover {
+    transition: color 0.2s ease-in-out;
+}
+
+.read-more-hover:hover {
+    color: $secondaryColor;
+    transition: color 0.2s ease-in-out;
+}
+
+
+@media only screen and (max-width: $sm) {
+    
+    footer {padding-bottom: 60px;}
+
+    .links { text-align: left; }
+    
+    .categories-title {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 300;
+        margin-top: 3rem;
+    }
+
+    .bullet-point { margin-left: 0; }
+
+    .article-title { font-size: 1rem; }
+
+    .technology-class,
+    .tv-class,
+    .human-class {
+        font-size: 1.2rem;
+        margin-top: 2.5rem;
+    }
+
+    .check-nav {
+        display: inline-block;
+    }
+
+}
+
+@media (min-width: $sm) and (max-width: $md) {
+
+    footer { padding-bottom: 60px; }
+
+    .links { text-align: left; }
+}
+
+@media (width: $md) {
+    .links { text-align: right; }
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500&display=swap');
+
+@import "./index_scss/main-nav";
+@import "./index_scss/articles";
+@import "./index_scss/latestSection";
+@import "./index_scss/pagination";
+@import "./index_scss/footer";
+
+@import "./post_scss/post";
+
+@import "./categories";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 17px;
+}
+
+// html{
+//     height: 100%;
+// }
+
+
+
+body {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    // height: 100%;
+}
+
+header {
+    width: 76%;
+    margin: auto;    
+}
+// .main-nav {
+//     display: none;
+// }
+
+#menuClose {
+    position: absolute;
+    right: 25px;
+    top: 7px;
+}
+
+.hidden-list {
+    list-style: none;
+    position: absolute;
+    top: 40%;
+         
+}
+
+.hidden-list a:hover {
+    border-bottom: 1px solid $secondaryColor;
+    transition: border-bottom 0.2s;
+}
+
+.hidden-list li a:link{
+    border-bottom: 1px solid $primaryColor;
+    font-size: 1.3rem;
+}
+
+.hidden-list li {
+    padding: 5px;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media only screen and (max-width: $sm) {
+    header { width: 90%; }
+}
+
+
+// .no-outline:focus{
+//     outline: none !important;
+// }
+
+
+
+
+// .description {
+//     text-align: justify;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

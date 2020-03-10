@@ -1,0 +1,84 @@
+.pagination-subscribe {
+    margin-top: 80px;
+}
+
+
+.pagination {
+    background-color: $fieldColor;
+    color: $fieldFontColor;
+    height: 57px;
+    width: 212px;
+    border-radius: 33px;
+    font-weight: 400;
+    font-size: 1.1em;
+    justify-content: center;   
+}
+
+.inside-pagination{
+    width: 70%;
+    justify-content: space-between;  
+}
+
+.subscribe {
+    font-weight: 400;
+}
+
+.enter-email {
+    background-color: $fieldColor;
+    color: $fieldFontColor;
+    height: 57px;
+    border-radius: 33px;
+    font-weight: 400;
+    font-size: 1.1em;
+    // width: 100%;
+}
+
+.inside-enter-email{
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.subscriber-container {
+    width: 754px;
+    max-width: 90%;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type=email] {
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 33px;
+    height: 57px;
+    width: 100%;
+    max-width: 558px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #0066FF;
+    border: none;
+    border-radius: 33px;
+    color: white;
+    height: 57px;
+    width: 100%;
+}
+
+input[type=email]::placeholder {
+    color: #B9B9B9;
+    font-size: 0.9em;
+}
+
+.subscription-box-before-margin{
+    margin-top: 40px;
+}
+
+.subscription-before-margin{
+    margin-top: 40px;
+}
+
+
+

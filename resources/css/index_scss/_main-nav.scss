@@ -1,0 +1,69 @@
+@import "./circle";
+@import "./variables";
+
+.main-nav{
+    list-style: none;
+
+    li{
+        display: inline-block;
+    }
+    
+    li:not(:last-child){
+        padding-right: 28px;
+    }
+       
+    li a {
+        position: relative;
+        color: $primaryColor;
+        
+        &:hover .circle{
+            opacity: 1;
+            transition: opacity 0.5s, top 0.4, transform 0.4s, right 0.4s;
+            transform: scale(1);
+            top: -5px;
+            right: -13px;
+        }
+    }
+
+    
+}
+
+li, a {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: $primaryColor;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.mobile-nav {
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon {
+    font-size: 1.8rem;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    background-color: white;
+}
+
