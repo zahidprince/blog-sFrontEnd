@@ -755,6 +755,9 @@ input[type=email]::placeholder {
   .mid-bar {
     height: 82%;
   }
+  header {
+    width: 90%;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -763,9 +766,9 @@ input[type=email]::placeholder {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1499px) {
   .container-c {
-    width: 70%;
+    width: 60%;
   }
 }
 
@@ -1048,11 +1051,26 @@ li:hover, a:hover {
   .links {
     text-align: left;
   }
+  .main-nav li {
+    list-style-type: disc;
+    display: block;
+    text-align: right;
+  }
+  .main-nav li:not(:last-child) {
+    padding-bottom: 10px;
+    padding-right: 0;
+  }
 }
 
 @media (width: 768px) {
   .links {
     text-align: right;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  header {
+    width: 90%;
   }
 }
 

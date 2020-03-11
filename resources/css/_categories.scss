@@ -138,8 +138,31 @@
     footer { padding-bottom: 60px; }
 
     .links { text-align: left; }
+
+    .main-nav {
+
+        li {
+            list-style-type: disc;
+            display: block;
+            text-align: right;
+        }
+
+        li:not(:last-child){
+            padding-bottom: 10px;
+            padding-right: 0;
+        }
+    }
 }
 
 @media (width: $md) {
     .links { text-align: right; }
+}
+
+
+
+// min 768px and max 992px
+@media (min-width: $md) and (max-width: $lg) {
+    
+    header { width: 90%; }
+
 }

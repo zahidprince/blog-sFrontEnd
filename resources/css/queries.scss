@@ -56,6 +56,8 @@
   
     // min 576px and max 768px
     @media (min-width: $sm) and (max-width: $md) {
+        .latest { margin-top: 60px; }
+        
         .content-box{
             margin-left: 25px;
             margin-bottom: 30px;
@@ -80,6 +82,21 @@
 
         .footer { padding-bottom: 60px; }
 
+        header { width: 90%; }
+
+        .main-nav {
+
+            li {
+                list-style-type: disc;
+                display: block;
+                text-align: right;
+            }
+
+            li:not(:last-child){
+                padding-bottom: 10px;
+                padding-right: 0;
+            }
+        }
     }
 
     // max 768px
@@ -122,6 +139,8 @@
             grid-row-gap: 4em;
         }
 
+        header { width: 90%; }
+
         
     }
   
@@ -132,12 +151,13 @@
 
     //min 992px
     @media (min-width: $lg) {
-        
+        header { width: 90%; }
     }
 
     // min 992px and max 1200px
     @media (min-width: $lg) and (max-width: $xl) {
         .background { height: 481px; }
+        
     }
 
     //min 1200px
@@ -147,7 +167,7 @@
 
     //min 1200px and max 1499px
     @media (min-width: $xl) and (max-width: $xxl) {
-  
+        
     }
     
     //min 1499px

@@ -239,16 +239,22 @@
         height: 82%;
         
     }
+
+    header { width: 90%; }
 }
 
 @media (min-width: $lg) and (max-width: $xl) {
     .container-c { width: 70%; }
 }
 
-@media (min-width: $xl) {
+//min 1200px and max 1499px
+@media (min-width: $xl) and (max-width: $xxl) {
     .container-c {
-        width: 70%;
+        width: 60%;
     }
 }
+
+
+
 
 
