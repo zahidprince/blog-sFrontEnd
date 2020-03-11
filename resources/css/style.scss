@@ -72,6 +72,12 @@ header {
     header { width: 90%; }
 }
 
+// min 768px and max 992px
+@media (min-width: $md) and (max-width: $lg) {
+    
+    header { width: 90% !important; }
+
+}
 
 
 
