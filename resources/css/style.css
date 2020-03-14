@@ -175,7 +175,7 @@ h2 {
 }
 
 .h2-margin {
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 h3 {
@@ -194,6 +194,14 @@ h3 {
   grid-gap: 3.5em;
   grid-row-gap: 6em;
   grid-auto-rows: minmax(100px, auto);
+}
+
+.fadeAnimation {
+  opacity: 0;
+}
+
+.fadeAnimation.animated {
+  opacity: 1;
 }
 
 .box {
@@ -215,10 +223,6 @@ h3 {
 
 .card-cat-date-size {
   font-size: 15px;
-}
-
-.more-articles-sec-2 {
-  margin-top: 100px;
 }
 
 .card-read-more:hover {
@@ -293,9 +297,9 @@ h1 {
 
 .pagination {
   background-color: #F2F2F2;
-  color: #B9B9B9;
+  color: #0066FF;
   height: 57px;
-  width: 212px;
+  width: 150px;
   border-radius: 33px;
   font-weight: 400;
   font-size: 1.1em;

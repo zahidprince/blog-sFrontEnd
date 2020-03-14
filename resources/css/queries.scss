@@ -151,12 +151,13 @@
 
     //min 992px
     @media (min-width: $lg) {
-        header { width: 90%; }
+        
     }
 
     // min 992px and max 1200px
     @media (min-width: $lg) and (max-width: $xl) {
         .background { height: 481px; }
+        header { width: 90%; }
         
     }
 

@@ -25,8 +25,6 @@ $(document).ready(function() {
             paddingTop: 'hide',
             paddingBottom: 'hide'
         })
-    })
-
-    
+    })   
 
 });
